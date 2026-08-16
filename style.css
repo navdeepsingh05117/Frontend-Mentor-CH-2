@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  /* font family */
+  --font-main: "Inter", sans-serif;
+
+  /* color  */
+  --primary-color: hsl(0, 0%, 8%);
+  --secondary-color: hsl(0, 0%, 12%);
+  --accent-color: hsl(75, 94%, 57%);
+  --primary-accent-color: hsl(0, 0%, 20%);
+  --font-color: hsl(0, 0%, 100%);
+
+  /* font weight */
+  --primary-font-weight: 700;
+  --secondary-font-weight: 600;
+  --sub-font-weight: 400;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+}
+/* card  */
+#card {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  height: 500px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 20px; */
+
+}
+#card img{
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* card main heading  */
+#card > #main-head {
+  font-weight: var(--primary-font-weight);
+    margin: 5px 0;
+}
+
+/* card sub heaidng  */
+#card > #sub-head {
+  font-weight: var(--secondary-font-weight);
+  color: var(--accent-color);
+    margin: 2px 0 5px 0;
+}
+
+/* card sub sub heading  */
+#card > #sub-sub-head {
+  font-weight: var(--sub-font-weight);
+    margin: 10px 0;
+
+}
+
+/* card button  */
+#card .btn > button{
+  display: block;
+  margin: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 250px;
+  background-color: var(--primary-accent-color);
+  color: var(--font-color);
+  border-radius: 5px;
+  border: 0px solid;
+  margin: 15px 0;
+}
+
+/* active when hover on .btn */
+
+#card .btn :hover{
+  background-color: var(--accent-color);
+  color: black;
+}
+
